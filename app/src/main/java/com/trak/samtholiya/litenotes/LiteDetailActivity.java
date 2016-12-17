@@ -23,7 +23,7 @@ import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.trak.samtholiya.litenotes.dummy.MainContent;
 
-public class LiteDetailActivity extends AppCompatActivity  {
+public class LiteDetailActivity extends AppCompatActivity implements OnFragmentInteractionListener  {
 
     LiteDetailFragment liteDetail;
     public static final String LITEDATA = "LITEDATA";
@@ -144,4 +144,8 @@ public class LiteDetailActivity extends AppCompatActivity  {
         overridePendingTransition(R.anim.push_left_in,R.anim.push_right_out);
     }
 
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+        Log.d("dfgh","dcfghjkl;edrftghjkdfghjk 88888888888888888 "+uri);
+    }
 }

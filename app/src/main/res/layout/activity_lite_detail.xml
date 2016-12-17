@@ -32,7 +32,7 @@
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@android:drawable/ic_dialog_email" />-->
 
-    <com.getbase.floatingactionbutton.FloatingActionsMenu
+   <!-- <com.getbase.floatingactionbutton.FloatingActionsMenu
         android:id="@+id/multiple_actions_left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -70,5 +70,5 @@
 
 
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
-
+-->
 </android.support.design.widget.CoordinatorLayout>
