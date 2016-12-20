@@ -84,9 +84,10 @@ public class MainActivity extends AppCompatActivity implements
         });
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
+        //TODO : Implement in Later Stage
         client = new GoogleApiClient.Builder(this).addConnectionCallbacks(this)
-                .addOnConnectionFailedListener(this)
-                .addApi(LocationServices.API).addApi(AppIndex.API).build();
+                .addOnConnectionFailedListener(this)/*
+                .addApi(LocationServices.API)*/.addApi(AppIndex.API).build();
         checkPermissions();
     }
 
@@ -105,7 +106,8 @@ public class MainActivity extends AppCompatActivity implements
     @Override
     protected void onResume() {
         super.onResume();
-        createLocationRequest();
+        //TODO : Implement in Later Stage
+        //createLocationRequest();
     }
 
     @Override
@@ -255,7 +257,8 @@ public class MainActivity extends AppCompatActivity implements
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
-        mLastLocation = LocationServices.FusedLocationApi.getLastLocation(client);
+        //TODO: Implement in Later Stage
+       /* mLastLocation = LocationServices.FusedLocationApi.getLastLocation(client);
         if (mLastLocation != null) {
             if (!Geocoder.isPresent()) {
                 Toast.makeText(this, R.string.no_geocoder_available,
@@ -267,7 +270,7 @@ public class MainActivity extends AppCompatActivity implements
         }
         else {
             Toast.makeText(getApplicationContext(),"Location not found",Toast.LENGTH_LONG).show();
-        }
+        }*/
     }
 
     @Override
@@ -281,7 +284,7 @@ public class MainActivity extends AppCompatActivity implements
     }
 
 
-    class AddressResultReceiver extends ResultReceiver {
+    public class AddressResultReceiver extends ResultReceiver {
         public AddressResultReceiver(Handler handler) {
             super(handler);
         }
