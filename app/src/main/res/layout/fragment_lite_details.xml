@@ -35,7 +35,7 @@
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:padding="12dp"
         android:layout_below="@id/TitleD">
@@ -49,10 +49,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/detail_content"
+            android:inputType="textMultiLine"
             android:text="test"
             android:padding="12dp"
             android:background="@android:color/transparent"
             android:gravity="top"
+            android:minLines="3"
             />
 
         </LinearLayout>
