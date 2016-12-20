@@ -56,9 +56,8 @@ public class LiteDetailActivity extends AppCompatActivity implements OnFragmentI
         item = (MainContent.MainItem) getIntent().getSerializableExtra(LITEDATA);
         liteDetail = LiteDetailFragment.newInstance(item);
         if (Build.VERSION.SDK_INT >= 21) {
-            Log.d("her1 1","------------------------------------ok hrer_-------------new");
             Slide slideTransition = new Slide();
-            slideTransition.setSlideEdge(Gravity.LEFT);
+            slideTransition.setSlideEdge(Gravity.START);
             slideTransition.setDuration(getApplicationContext().getResources().getInteger(R.integer.anim_duration_long));
             liteDetail.setEnterTransition(slideTransition);
             liteDetail.setExitTransition(slideTransition);
